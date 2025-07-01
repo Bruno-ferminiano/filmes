@@ -1,0 +1,26 @@
+.barra {
+  background-color: rgba(250, 198, 27, 0.993);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+}
+
+.logo {
+
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 0px;
+}
+
+.usuario{
+ position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    top: 10px; /* Distância do topo da página */
+    right: 10px; /* Distância da direita da página */
+    background-color: rgb(255, 255, 255); /* Apenas para visualização */
+    padding: 5px 10px; /* Apenas para visualização */
+    border-radius: 5px; /* Apenas para visualização */
+}
