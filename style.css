@@ -27,10 +27,10 @@
 
 .filmes {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background-color: rgb(255, 255, 255);
-  padding: 5px 10px;
-  border-radius: 5px;
+    top: 100px; /* Valor para posicionar abaixo da barra superior */
+    left: 50%;
+    transform: translate(-50%, 0); /* Removendo o -10% para centralizar verticalmente */
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
