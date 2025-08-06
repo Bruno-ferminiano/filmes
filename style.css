@@ -27,7 +27,7 @@
 
 .filmes {
   position: absolute;
-    top: 100px; /* Valor para posicionar abaixo da barra superior */
+    top: 500px; /* Valor para posicionar abaixo da barra superior */
     left: 50%;
     transform: translate(-50%, 0); /* Removendo o -10% para centralizar verticalmente */
     background-color: rgb(255, 255, 255);
