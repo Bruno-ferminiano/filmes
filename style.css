@@ -1,5 +1,5 @@
 body{
-  color: rgb(255, 2, 2);
+  color: rgb(255, 255, 255);
   background-color: rgb(40, 40, 40);
 }
 
@@ -35,7 +35,7 @@ body{
     top: 100px; /* Valor para posicionar abaixo da barra superior */
     left: 50%;
     transform: translate(-50%, 0); /* Removendo o -10% para centralizar verticalmente */
-    background-color: rgb(194, 76, 76);
+    background-color: rgb(255, 255, 255);
     padding: 5px 10px;
     border-radius: 5px;
 }
