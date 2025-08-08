@@ -1,5 +1,6 @@
 body{
-  color: rgba(39, 39, 39, 0.908);
+  color: rgb(255, 255, 255);
+  background-color: rgb(40, 40, 40);
 }
 
 .barra {
