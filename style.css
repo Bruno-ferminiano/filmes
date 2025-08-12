@@ -1,10 +1,19 @@
 body{
   color: rgb(255, 255, 255);
   background-color: rgb(40, 40, 40);
+
+  font-family: 'Nunito', sans-serif;
 }
 
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700; 
+}
+
+
+
 .barra {
-  background-color: rgba(250, 198, 27, 0.993);
+  background-color: rgba(228, 180, 23, 0.993);
   position: fixed;
   top: 0;
   left: 0;
@@ -25,30 +34,23 @@ body{
     position: absolute; 
     top: 10px; 
     right: 10px; 
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(71, 71, 71); 
     padding: 5px 10px; 
     border-radius: 5px; 
 }
 
 .filmes {
-    /* Usamos Flexbox para alinhar os vídeos em uma fila */
+ 
     display: flex;
-    /* Alinha os itens no centro */
     justify-content: center;
-    /* Adiciona um espaço entre os vídeos */
     gap: 15px; 
-    /* Permite que os itens quebrem para a próxima linha se a tela for pequena */
     flex-wrap: wrap; 
-    /* Remove a cor de fundo e o padding do contêiner */
     background-color: transparent;
     padding: 0;
-    /* Remove a posição absoluta para um layout mais fluido */
     position: static; 
 }
 
 .filmes img {
-    /* Define a largura das imagens, deixando-as pequenas */
     width: 250px; 
-    /* Opcional: para ter um efeito de cantos arredondados */
     border-radius: 8px;
 }
