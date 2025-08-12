@@ -31,11 +31,24 @@ body{
 }
 
 .filmes {
-  position: absolute;
-    top: 100px; /* Valor para posicionar abaixo da barra superior */
-    left: 50%;
-    transform: translate(-50%, 0); /* Removendo o -10% para centralizar verticalmente */
-    background-color: rgb(255, 255, 255);
-    padding: 5px 10px;
-    border-radius: 5px;
+    /* Usamos Flexbox para alinhar os vídeos em uma fila */
+    display: flex;
+    /* Alinha os itens no centro */
+    justify-content: center;
+    /* Adiciona um espaço entre os vídeos */
+    gap: 15px; 
+    /* Permite que os itens quebrem para a próxima linha se a tela for pequena */
+    flex-wrap: wrap; 
+    /* Remove a cor de fundo e o padding do contêiner */
+    background-color: transparent;
+    padding: 0;
+    /* Remove a posição absoluta para um layout mais fluido */
+    position: static; 
+}
+
+.filmes img {
+    /* Define a largura das imagens, deixando-as pequenas */
+    width: 250px; 
+    /* Opcional: para ter um efeito de cantos arredondados */
+    border-radius: 8px;
 }
