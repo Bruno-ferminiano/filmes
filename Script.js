@@ -27,7 +27,7 @@ formlogin.addEventListener('submit', function(event) {
 
   if (nome && email && senha) {
     alert('Login feito com sucesso, redirecionando...');
-    formulario.reset();
+    //formulario.reset();
     window.location.href = "home.html"; // Redireciona para a página home.html na mesma aba
   } else {
     alert('Por favor, preencha todos os campos.');
