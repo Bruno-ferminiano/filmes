@@ -16,20 +16,21 @@ h1 {
 }    
 .logo {    
   position: fixed;   
-  top: 10px;   
+  top: 0px;   
   left: 10px; 
   height: 60px; 
+    z-index: 2;
 }
+
 .barra {   
-  background-color: rgb(223, 176, 20);   
+  background-color: rgb(250, 200, 36);   
   position: fixed;   
   top: 0;   
   left: 0;   
   right: 0;   
-  height: 85px;
-  z-index: 1000;
+  height: 75px;
+  z-index: 1;
 }  
-
 
 
 .usuario {     
@@ -38,7 +39,8 @@ h1 {
   right: 10px;      
   background-color: rgb(71, 71, 71);      
   padding: 5px 10px;      
-  border-radius: 5px;  
+  border-radius: 5px; 
+    z-index: 2; 
 }  
 
 .filmes {
@@ -46,6 +48,7 @@ h1 {
     gap: 20px; /* Adiciona um espaço entre os vídeos */
     flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha se não houver espaço */
     justify-content: center; /* Centraliza os vídeos na linha */
+      z-index: 0;
 }
 
 .filmes img {
@@ -53,6 +56,7 @@ h1 {
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
     transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+      z-index: 0;
 }
 
 /* Efeito de hover para dar um toque extra de estilo */
