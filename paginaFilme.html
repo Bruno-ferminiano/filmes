@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Corta Essa || Video Player</title>
@@ -15,15 +14,13 @@
 <body>
     <div class="barra"></div>
 
-    <div class="logo">  
-      <img src="img/logo.png" width="120" height="87" />
+    <div class="logo">  
+        <img src="img/logo.png" width="120" height="87" />
     </div>
     
     <div class="usuario">
-      <p>usuário</p>
+        <p>usuário</p>
     </div>
-</head>
-<body>
     
     <div id="video-container"></div>
 
@@ -32,10 +29,10 @@
     <script>
         // Mapeia os IDs numéricos para os IDs reais dos vídeos do YouTube
         const videoMap = {
-            '1': 'OWpHvAuHxf6bqV0e', // Substitua com o ID real do vídeo
-            '2': 'https://www.youtube.com/embed/lUXeHR_Q7tI?si=fe1mNfR9LmxJ_m5E', // Substitua com o ID real do vídeo
-            '3': 'https://www.youtube.com/embed/nMQAW9_7YYw?si=8UFArrJBrpH2pmnj', // Substitua com o ID real do vídeo
-            '4': 'Black Sabbath - Paranoid (Official Audio)' // Substitua com o ID real do vídeo
+            '1': 'b1t4_2210y8', 
+            '2': 'uX83U_wD7yE', 
+            '3': 'j66W4M8y_Uo', 
+            '4': 'd-CqF-P_k_A'
         };
 
         // Função para obter o parâmetro da URL
@@ -55,7 +52,7 @@
         // Se encontrou um ID válido, insere o vídeo
         if (youtubeVideoId) {
             const videoContainer = document.getElementById('video-container');
-            videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${youtubeVideoId}" frameborder="0" allowfullscreen></iframe>`;
+            videoContainer.innerHTML = `<iframe width="560" height="315" src="https://img.youtube.com/vi/pTVxXClwj6g/maxresdefault.jpg4${youtubeVideoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
         }
     </script>
 </body>
