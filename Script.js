@@ -29,7 +29,7 @@ formlogin.addEventListener('submit', function(event) {
     
     alert('Login feito com sucesso redirecionando...');
     formulario.reset();
-    window.location.href = "home.html";
+    window.open("home.html", "_blank");
   } else {
     alert('Por favor, preencha todos os campos.');
   }
