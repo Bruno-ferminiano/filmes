@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Corta Essa || Video Player </title>
+</head>
+<body>
+    
+    <div id="video-container"></div>
+
+    <a href="paginaFilme.html">Trailer</a>
+
+    <script>
+        // Mapeia os IDs numéricos para os IDs reais dos vídeos do YouTube
+        const videoMap = {
+            '1': 'https://www.youtube.com/embed/pTVxXClwj6g?si=60KwSo3aDU9jaIZz', // Substitua com o ID real do vídeo
+            '2': 'https://www.youtube.com/embed/lUXeHR_Q7tI?si=fe1mNfR9LmxJ_m5E', // Substitua com o ID real do vídeo
+            '3': 'https://www.youtube.com/embed/nMQAW9_7YYw?si=8UFArrJBrpH2pmnj', // Substitua com o ID real do vídeo
+            '4': 'Black Sabbath - Paranoid (Official Audio)' // Substitua com o ID real do vídeo
+        };
+
+        // Função para obter o parâmetro da URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Obtém o ID do vídeo da URL
+        const videoIdFromUrl = getUrlParameter('video');
+
+        // Pega o ID do vídeo do YouTube correspondente
+        const youtubeVideoId = videoMap[videoIdFromUrl];
+
+        // Se encontrou um ID válido, insere o vídeo
+        if (youtubeVideoId) {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${youtubeVideoId}" frameborder="0" allowfullscreen></iframe>`;
+        }
+    </script>
+</body>
+</html>
