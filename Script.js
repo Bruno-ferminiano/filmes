@@ -16,20 +16,19 @@ formulario.addEventListener('submit', function(event) {
 });
 
 
-const formlogin = document.getElementById('loginForm');
+const loginForm = document.getElementById('loginForm');
 
-formlogin.addEventListener('submit', function(event) {
-  event.preventDefault(); 
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-  const nome = document.getElementById('nome').value;
-  const email = document.getElementById('email').value;
-  const senha = document.getElementById('senha').value;
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
 
-  if (nome && email && senha) {
-    alert('Login feito com sucesso, redirecionando...');
-    //formulario.reset();
-    window.location.href = 'home.html'; 
-  } else {
-    alert('Por favor, preencha todos os campos.');
-  }
+    if (nome && email && senha) {
+        alert('Login feito com sucesso, redirecionando...');
+        window.location.href = 'home.html'; 
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
 });
