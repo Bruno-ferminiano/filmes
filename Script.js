@@ -37,6 +37,21 @@ if (loginForm) {
 }
 
 function minhaFuncao(){
-      alert('Login feito com sucesso, redirecionando...');
+    
+const loginForm = document.getElementById('loginForm');
+
+if (loginForm) {
+  
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      if (nome && email && senha) {
+          alert('Login feito com sucesso, redirecionando...');
           window.location.href = 'home.html'; 
-}
+      } else {
+          alert('Por favor, preencha todos os campos.');
+      }
+ 
+}}
