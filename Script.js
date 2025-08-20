@@ -16,24 +16,21 @@ if (formulario) {
   });
 }
 
-
-
-function minhaFuncao(){
-    
 const loginForm = document.getElementById('loginForm');
 
 if (loginForm) {
-  
+  loginForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o comportamento padrão de submissão do formulário
 
-      const nome = document.getElementById('nome1').value;
-      const email = document.getElementById('email1').value;
-      const senha = document.getElementById('senha1').value;
+    const nome = document.getElementById('nome1').value;
+    const email = document.getElementById('email1').value;
+    const senha = document.getElementById('senha1').value;
 
-      if (nome && email && senha) {
-          alert('Login feito com sucesso, redirecionando...');
-          window.location.href = 'home.html'; 
-      } else {
-          alert('Por favor, preencha todos os campos.');
-      }
- 
-}}
+    if (nome && email && senha) {
+      alert('Login feito com sucesso, redirecionando...');
+      window.location.href = 'home.html';
+    } else {
+      alert('Por favor, preencha todos os campos.');
+    }
+  });
+}
