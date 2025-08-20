@@ -1,34 +1,37 @@
 const formulario = document.getElementById('meuFormulario');
 
-formulario.addEventListener('submit', function(event) {
-  event.preventDefault(); 
+if (formulario) {
+  formulario.addEventListener('submit', function(event) {
+      event.preventDefault(); 
 
-  const nome = document.getElementById('nome').value;
-  const email = document.getElementById('email').value;
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
 
-  if (nome && email) {
-    
-    alert('crítica enviada com sucesso!');
-    formulario.reset();
-  } else {
-    alert('Por favor, preencha todos os campos.');
-  }
-});
+      if (nome && email) {
+          alert('crítica enviada com sucesso!');
+          formulario.reset();
+      } else {
+          alert('Por favor, preencha todos os campos.');
+      }
+  });
+}
 
 
 const loginForm = document.getElementById('loginForm');
 
-loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); 
+if (loginForm) {
+  loginForm.addEventListener('submit', function(event) {
+      event.preventDefault(); 
 
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
 
-    if (nome && email && senha) {
-        alert('Login feito com sucesso, redirecionando...');
-        window.location.href = 'home.html'; 
-    } else {
-        alert('Por favor, preencha todos os campos.');
-    }
-});
+      if (nome && email && senha) {
+          alert('Login feito com sucesso, redirecionando...');
+          window.location.href = 'home.html'; 
+      } else {
+          alert('Por favor, preencha todos os campos.');
+      }
+  });
+}
