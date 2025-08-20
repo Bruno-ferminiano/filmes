@@ -44,22 +44,22 @@ h1 {
 }  
 
 .filmes {
-    display: flex; /* Transforma o contêiner em um Flexbox */
-    gap: 20px; /* Adiciona um espaço entre os vídeos */
-    flex-wrap: wrap; /* Permite que os vídeos quebrem para a próxima linha se não houver espaço */
-    justify-content: center; /* Centraliza os vídeos na linha */
+    display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
       z-index: 0;
 }
 
 .filmes img {
-    max-width: 250px; /* Define a largura máxima de cada imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+    max-width: 250px; 
+    height: auto; 
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
       z-index: 0;
 }
 
-/* Efeito de hover para dar um toque extra de estilo */
+
 .filmes img:hover {
     transform: scale(1.05);
 }
