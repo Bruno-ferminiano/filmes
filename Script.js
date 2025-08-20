@@ -10,6 +10,7 @@ if (formulario) {
       if (nome && email) {
           alert('crítica enviada com sucesso!');
           formulario.reset();
+          window.location.href = 'home.html';
       } else {
           alert('Por favor, preencha todos os campos.');
       }

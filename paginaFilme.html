@@ -23,19 +23,19 @@
     </div>
     
     <div id="video-container"></div>
-
+    
     <a href="criticas.html">Escrever uma crítica</a>
 
     <script>
-        // Mapeia os IDs numéricos para os IDs reais dos vídeos do YouTube
+        
         const videoMap = {
-            '1': 'FwADBQ3FXlw&list=RDFwADBQ3FXl', 
+            '1': 'P5ZJui3aPoQ&', 
             '2': 'uX83U_wD7yE', 
             '3': 'j66W4M8y_Uo', 
             '4': 'd-CqF-P_k_A'
         };
 
-        // Função para obter o parâmetro da URL
+       
         function getUrlParameter(name) {
             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
             var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
@@ -43,13 +43,13 @@
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
 
-        // Obtém o ID do vídeo da URL
+        
         const videoIdFromUrl = getUrlParameter('video');
 
-        // Pega o ID do vídeo do YouTube correspondente
+       
         const youtubeVideoId = videoMap[videoIdFromUrl];
 
-        // Se encontrou um ID válido, insere o vídeo
+        
         if (youtubeVideoId) {
             const videoContainer = document.getElementById('video-container');
             videoContainer.innerHTML = `<iframe width="560" height="315" src="https://img.youtube.com/vi/pTVxXClwj6g/maxresdefault.jpg4${youtubeVideoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
