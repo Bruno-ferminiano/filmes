@@ -35,3 +35,8 @@ if (loginForm) {
       }
   });
 }
+
+function minhaFuncao(){
+      alert('Login feito com sucesso, redirecionando...');
+          window.location.href = 'home.html'; 
+}
