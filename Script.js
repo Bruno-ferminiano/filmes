@@ -16,23 +16,7 @@ if (formulario) {
   });
 }
 
-
-
-const loginForm = document.getElementById('loginForm');
-
-if (loginForm) {
-  loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
-
-    const nome = document.getElementById('nome1').value;
-    const email = document.getElementById('email1').value;
-    const senha = document.getElementById('senha1').value;
-
-    if (nome && email && senha) {
+  function loginbutton(){
       alert('Login feito com sucesso, redirecionando...');
       window.location.href = 'home.html';
-    } else {
-      alert('Por favor, preencha todos os campos.');
-    }
-  });
-}
+  }
