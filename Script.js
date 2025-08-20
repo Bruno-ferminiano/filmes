@@ -16,11 +16,13 @@ if (formulario) {
   });
 }
 
+
+
 const loginForm = document.getElementById('loginForm');
 
 if (loginForm) {
   loginForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o comportamento padrão de submissão do formulário
+    event.preventDefault(); // Impede o envio do formulário
 
     const nome = document.getElementById('nome1').value;
     const email = document.getElementById('email1').value;
