@@ -26,34 +26,29 @@
     
     <a href="criticas.html">Escrever uma crítica</a>
 
-    <script>
-        
-        const videoMap = {
-            '1': 'P5ZJui3aPoQ&', 
-            '2': 'uX83U_wD7yE', 
-            '3': 'j66W4M8y_Uo', 
-            '4': 'd-CqF-P_k_A'
-        };
+   <script>
+    const videoMap = {
+        '1': 'P5ZJui3aPoQ',  
+        '2': 'uX83U_wD7yE',
+        '3': 'j66W4M8y_Uo',
+        '4': 'd-CqF-P_k_A'
+    };
 
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    const videoIdFromUrl = getUrlParameter('video');
+    const youtubeVideoId = videoMap[videoIdFromUrl];
+
+    if (youtubeVideoId) {
+        const videoContainer = document.getElementById('video-container');
        
-        function getUrlParameter(name) {
-            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-            var results = regex.exec(location.search);
-            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-        }
-
-        
-        const videoIdFromUrl = getUrlParameter('video');
-
-       
-        const youtubeVideoId = videoMap[videoIdFromUrl];
-
-        
-        if (youtubeVideoId) {
-            const videoContainer = document.getElementById('video-container');
-            videoContainer.innerHTML = `<iframe width="560" height="315" src="https://img.youtube.com/vi/pTVxXClwj6g/maxresdefault.jpg4${youtubeVideoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-        }
-    </script>
+        videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${youtubeVideoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    }
+</script>
 </body>
 </html>
