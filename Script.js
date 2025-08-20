@@ -16,7 +16,7 @@ if (formulario) {
   });
 }
 
-function loginbutton(){
-      alert('Login feito com sucesso, redirecionando...');
-          window.location.href = 'home.html'; 
+function loginbutton() {
+  alert('Login feito com sucesso, redirecionando...');
+  window.location.href = 'home.html';
 }
